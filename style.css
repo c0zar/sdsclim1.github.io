@@ -293,18 +293,27 @@ img.img-fluid {
 }
 
 .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centre automatiquement la 5ème carte sur la ligne du bas */
+    gap: 20px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 40px auto 0 auto;
 }
 
 .service-card {
-    background-color: rgba(255,255,255,0.05);
-    padding: 35px 25px;
-    border-radius: 4px;
-    transition: transform 0.3s;
+    /* Configuration pour afficher 4 cartes max par ligne (25% moins le gap) */
+    flex: 0 1 calc(25% - 20px); 
+    min-width: 240px;           
+    max-width: 280px;           
+
+    /* Retour au fond sombre transparent/bleuté de l'ancien design */
+    background-color: rgba(255, 255, 255, 0.05); 
+    padding: 30px 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-card:hover {
@@ -312,20 +321,21 @@ img.img-fluid {
 }
 
 .icon-service {
-    font-size: 40px;
-    color: var(--primary-color);
+    font-size: 35px;
+    color: var(--primary-color); 
     margin-bottom: 20px;
 }
 
 .service-card h3 {
     font-size: 16px;
+    color: var(--white); /* Titre en blanc pour le contraste */
     margin-bottom: 15px;
     letter-spacing: 1px;
 }
 
 .service-card p {
     font-size: 13px;
-    color: #cccccc;
+    color: #cccccc; /* Texte de description clair */
     line-height: 1.6;
 }
 
