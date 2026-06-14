@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Google tag (gtag.js) - Suivi Google Ads -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18215917511"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-18215917511');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDS Climatisation - Installation, Maintenance & Dépannage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#accueil" class="logo-link">
+                <img src="logo1.png" alt="SDS Climatisation Logo" class="site-logo">
+            </a>
+            
+            <!-- Menu de navigation principal -->
+            <nav class="nav-menu" id="navMenu">
+                <a href="#accueil" class="active" data-i18n="nav_accueil">ACCUEIL</a>
+                <a href="#services" data-i18n="nav_services">NOS SERVICES</a>
+                <a href="#realisations" data-i18n="nav_realisations">RÉALISATIONS</a>
+                <a href="#avis" data-i18n="nav_avis">AVIS CLIENTS</a>
+                <a href="#a-propos" data-i18n="nav_apropos">À PROPOS</a>
+                <a href="#contact" data-i18n="nav_contact">CONTACT</a>
+            </nav>
+            
+            <div class="nav-cta">
+                <!-- Sélecteur de Langues -->
+                <div class="lang-selector">
+                    <button class="lang-btn" id="langBtn">
+                        <i class="fa-solid fa-globe"></i> <span id="currentLang">FR</span> <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <span class="lang-option" data-lang="fr">Français</span>
+                        <span class="lang-option" data-lang="en">English</span>
+                        <span class="lang-option" data-lang="ru">Русский</span>
+                    </div>
+                </div>
+
+                <a href="tel:0780189409" class="phone-link">
+                    <i class="fa-solid fa-phone"></i> <span class="phone-text">07 80 18 94 09</span>
+                </a>
+                <a href="#contact" class="btn-devis-nav">
+                    <i class="fa-regular fa-file-lines"></i> <span data-i18n="btn_devis">DEMANDER UN DEVIS</span>
+                </a>
+
+                <!-- Bouton Menu Mobile (Burger) -->
+                <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section id="accueil" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-tagline" data-i18n="hero_tagline">VOTRE CONFORT, NOTRE PRIORITÉ</p>
+                <h1 data-i18n="hero_title">SDS CLIMATISATION</h1>
+                <p class="hero-subtitle" data-i18n="hero_subtitle">Installation • Maintenance • Dépannage</p>
+                <p class="hero-description" data-i18n="hero_desc">
+                    Spécialistes de la climatisation et des pompes à chaleur pour les particuliers et les professionnels en Île-de-France.
+                </p>
+                <div class="hero-buttons">
+                    <a href="tel:0780189409" class="btn-primary">
+                        <i class="fa-solid fa-phone"></i> <span data-i18n="btn_appeler">APPELER MAINTENANT</span>
+                    </a>
+                    <a href="#contact" class="btn-secondary">
+                        <i class="fa-regular fa-file-lines"></i> <span data-i18n="btn_devis">DEMANDER UN DEVIS</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="clim1.jpg" alt="Installation Climatisation">
+            </div>
+        </div>
+    </section>
+
+    <section class="ribbon">
+        <div class="ribbon-container">
+            <div class="ribbon-item">
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <div>
+                    <h4 data-i18n="ribbon_1_title">INTERVENTION RAPIDE</h4>
+                    <p data-i18n="ribbon_1_desc">Déplacement sous 24h</p>
+                </div>
+            </div>
+            <div class="ribbon-item">
+                <i class="fa-regular fa-clipboard"></i>
+                <div>
+                    <h4 data-i18n="ribbon_2_title">DEVIS GRATUIT</h4>
+                    <p data-i18n="ribbon_2_desc">Réponse sous 24h</p>
+                </div>
+            </div>
+            <div class="ribbon-item">
+                <i class="fa-regular fa-circle-check"></i>
+                <div>
+                    <h4 data-i18n="ribbon_3_title">TRAVAIL SOIGNÉ</h4>
+                    <p data-i18n="ribbon_3_desc">Qualité et finitions</p>
+                </div>
+            </div>
+            <div class="ribbon-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <div>
+                    <h4 data-i18n="ribbon_4_title">GARANTIE</h4>
+                    <p data-i18n="ribbon_4_desc">Pièces et main d'œuvre</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <h2 data-i18n="nav_services">NOS SERVICES</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fa-regular fa-snowflake icon-service"></i>
+                <h3 data-i18n="service_1_title">CLIMATISATION</h3>
+                <p data-i18n="service_1_desc">Installation de climatiseurs multi-split, gainable, mural. Toutes marques.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-fire-flame-simple icon-service"></i>
+                <h3 data-i18n="service_2_title">POMPE À CHALEUR</h3>
+                <p data-i18n="service_2_desc">Installation de pompes à chaleur air/air et air/eau pour un confort optimal et des économies.</p>
+            </div>
+            <div class="service-card">
+    <!-- Icône corrigée : un tournevis et une clé croisés -->
+    <i class="fa-solid fa-screwdriver-wrench icon-service"></i>
+    <h3 data-i18n="service_3_title">MAINTENANCE</h3>
+    <p data-i18n="service_3_desc">Entretien, nettoyage et maintenance pour garantir la performance de vos équipements.</p>
+</div>
+            <div class="service-card">
+                <i class="fa-regular fa-lightbulb icon-service"></i>
+                <h3 data-i18n="service_4_title">DÉPANNAGE 7J/7</h3>
+                <p data-i18n="service_4_desc">Dépannage rapide toutes marques 7 jours sur 7 en cas de panne ou de problème.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="a-propos" class="why-us-section">
+        <div class="why-us-container">
+            <div class="why-us-left">
+                <h3 data-i18n="about_title">POURQUOI CHOISIR SDS CLIMATISATION ?</h3>
+                <ul class="why-list">
+                    <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="about_l1">Plus de 10 ans d'expérience</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="about_l2">Techniciens qualifiés et certifiés</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="about_l3">Matériel de qualité (Daikin, Mitsubishi, Toshiba, etc.)</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="about_l4">Assurance décennale</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="about_l5">Attestation de capacité frigorifique</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <span data-i18n="about_l6">Respect des délais et travail propre</span></li>
+                </ul>
+            </div>
+            <div class="why-us-center">
+                <img src="clim11.png" alt="Unité extérieure Pompe à Chaleur" class="img-fluid">
+            </div>
+            <div class="why-us-right">
+                <div class="stat-grid">
+                    <div class="stat-card">
+                        <i class="fa-regular fa-clock"></i>
+                        <span class="stat-number">+10</span>
+                        <span class="stat-label" data-i18n="stat_1">ANS D'EXPÉRIENCE</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-regular fa-heart"></i>
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label" data-i18n="stat_2">CLIENTS SATISFAITS</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <span class="stat-number">24h</span>
+                        <span class="stat-label" data-i18n="stat_3">INTERVENTION RAPIDE</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fa-solid fa-headset"></i>
+                        <span class="stat-number">7j/7</span>
+                        <span class="stat-label" data-i18n="stat_4">DÉPANNAGE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="realisations" class="portfolio-section">
+        <h2 data-i18n="nav_realisations">NOS RÉALISATIONS</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item"><img src="clim1.jpg" alt="Réalisation Climatisation 1"></div>
+            <div class="portfolio-item"><img src="clim11.png" alt="Réalisation Climatisation 2"></div>
+            <div class="portfolio-item"><img src="clim12.png" alt="Réalisation Climatisation 3"></div>
+            <div class="portfolio-item"><img src="clim13.jpg" alt="Réalisation Climatisation 4"></div>
+            <div class="portfolio-item"><img src="clim14.png" alt="Réalisation Climatisation 5"></div>
+            <div class="portfolio-item"><img src="clim15.jpg" alt="Réalisation Climatisation 6"></div>
+            <div class="portfolio-item"><img src="clim16.png" alt="Réalisation Climatisation 7"></div>
+        </div>
+    </section>
+
+    <section id="avis" class="reviews-section">
+        <div class="reviews-header-container">
+            <h2 data-i18n="nav_avis">AVIS CLIENTS</h2>
+            <div class="google-rating-global">
+                <span class="rating-num">5.0</span>
+                <div class="stars" id="googleStars"></div>
+            </div>
+        </div>
+
+        <div class="reviews-container" id="reviewsContainer"></div>
+
+        <div class="add-review-trigger">
+            <button id="openReviewBtn" class="btn-more"><i class="fa-solid fa-pen"></i> <span data-i18n="btn_avis">LAISSER UN AVIS</span></button>
+        </div>
+
+        <div id="reviewFormContainer" class="review-form-container hidden">
+            <h3 class="form-title" data-i18n="form_title">Votre avis compte pour nous</h3>
+            <form id="addReviewForm">
+                <div class="form-group">
+                    <label for="revName" data-i18n="form_name">Nom / Prénom ou Entreprise :</label>
+                    <input type="text" id="revName" required placeholder="Ex: Jean Dupont">
+                </div>
+                
+                <div class="form-group">
+                    <label data-i18n="form_rating">Votre note :</label>
+                    <div class="rating-input-stars">
+                        <input type="radio" id="star5" name="revRating" value="5" checked><label for="star5"><i class="fa-solid fa-star"></i></label>
+                        <input type="radio" id="star4" name="revRating" value="4"><label for="star4"><i class="fa-solid fa-star"></i></label>
+                        <input type="radio" id="star3" name="revRating" value="3"><label for="star3"><i class="fa-solid fa-star"></i></label>
+                        <input type="radio" id="star2" name="revRating" value="2"><label for="star2"><i class="fa-solid fa-star"></i></label>
+                        <input type="radio" id="star1" name="revRating" value="1"><label for="star1"><i class="fa-solid fa-star"></i></label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="revComment" data-i18n="form_comment">Votre commentaire :</label>
+                    <textarea id="revComment" rows="4" required placeholder="Partagez votre expérience..."></textarea>
+                </div>
+
+                <div class="form-buttons-group">
+                    <button type="submit" class="btn-primary" id="submitReviewBtn" data-i18n="form_btn_send">Envoyer l'avis</button>
+                    <button type="button" id="cancelReviewBtn" class="btn-cancel" data-i18n="form_btn_cancel">Annuler</button>
+                </div>
+            </form>
+            <div id="formMessage" class="form-message hidden"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="zone-info">
+                <h3 data-i18n="zone_title">NOTRE ZONE D'INTERVENTION</h3>
+                <p data-i18n="zone_desc">Nous intervenons dans toute l'Île-de-France et notamment dans :</p>
+                <ul class="zone-list">
+                    <li><i class="fa-solid fa-location-dot"></i> Paris</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Val-de-Marne (94)</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Seine-Saint-Denis (93)</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Hauts-de-Seine (92)</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Seine-et-Marne (77)</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Yvelines (78)</li>
+                </ul>
+                <div class="map-placeholder">
+                    <img src="carte.png" alt="Carte Île-de-France" class="img-fluid">
+                </div>
+            </div>
+            <div class="cta-box-container">
+                <div class="cta-box">
+                    <h3 data-i18n="cta_title">UN PROJET ? PARLONS-EN !</h3>
+                    <p data-i18n="cta_desc">Besoin d'une installation, d'une maintenance ou d'un dépannage ? Contactez-nous dès maintenant, notre équipe est à votre écoute.</p>
+                    <div class="cta-box-buttons">
+                        <a href="tel:0780189409" class="btn-cta-phone">
+                            <i class="fa-solid fa-phone"></i> 07 80 18 94 09
+                        </a>
+                        <a href="https://wa.me/33780189409?text=Bonjour" target="_blank" class="btn-cta-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i> WHATSAPP
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="logo white-logo">
+                    <img src="logo1.png" alt="SDS Climatisation Logo" class="site-logo footer-logo-img">
+                </div>
+                <p data-i18n="footer_desc">Spécialistes en climatisation et pompes à chaleur en Île-de-France.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.google.com/search?q=SDS+Climatisation" target="_blank"><i class="fa-brands fa-google"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n="footer_t1">LIENS RAPIDES</h4>
+                <ul>
+                    <li><a href="#accueil" data-i18n="nav_accueil">Accueil</a></li>
+                    <li><a href="#services" data-i18n="nav_services">Nos services</a></li>
+                    <li><a href="#realisations" data-i18n="nav_realisations">Réalisations</a></li>
+                    <li><a href="#avis" data-i18n="nav_avis">Avis clients</a></li>
+                    <li><a href="#a-propos" data-i18n="nav_apropos">À propos</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-services">
+                <h4 data-i18n="nav_services">NOS SERVICES</h4>
+                <ul>
+                    <li><a href="#services" data-i18n="service_1_title">Climatisation</a></li>
+                    <li><a href="#services" data-i18n="service_2_title">Pompe à chaleur</a></li>
+                    <li><a href="#services" data-i18n="service_3_title">Maintenance</a></li>
+                    <li><a href="#services" data-i18n="service_4_title">Dépannage 7j/7</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4 data-i18n="nav_contact">CONTACT</h4>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i> 07 80 18 94 09</li>
+                    <li><i class="fa-solid fa-envelope"></i> sdsclimatisation@gmail.com</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Île-de-France</li>
+                </ul>
+                <a href="https://wa.me/33780189409" target="_blank" class="btn-whatsapp-footer">
+                    <i class="fa-brands fa-whatsapp"></i> WHATSAPP
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SDS Climatisation - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <!-- Script de traduction personnalisé -->
+    <script src="lang.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+    <script src="reviews.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
